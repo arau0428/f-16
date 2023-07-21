@@ -42,14 +42,24 @@ nav .openbtn2.active span:nth-of-type(2) {
   transform: translateY(-6px) rotate(45deg);
   width: 35%;
 }
+nav .nav_menu {
+  display: none;
+  cursor: pointer;
+}
+nav .nav_menu.active {
+  display: flex;
+}
 
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
+  position: relative;
 }
 main .category__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   width: 580px;
   height: 580px;
   transform: rotate(90deg);
@@ -59,6 +69,49 @@ main .category__container {
   mix-blend-mode: multiply;
   filter: blur(50px);
 }
-main .category__container #designer, main .category__container #directer, main .category__container #engineer, main .category__container #producer {
-  transform: rotate(-90deg);
+main .job_box #designer, main .job_box #directer, main .job_box #engineer, main .job_box #producer {
+  width: 100px;
+  height: 100px;
+  background-color: #FBFBFB;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 1;
+}
+main .click_torigger {
+  width: 474px;
+  height: 474px;
+  flex-shrink: 0;
+  border-radius: 474px;
+  background: rgba(251, 251, 251, 0.85);
+  box-shadow: 0px 0px 20px 3px rgba(51, 51, 51, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-family: Avenir;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 2;
+}
+main .click_torigger.active {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }/*# sourceMappingURL=style.css.map */

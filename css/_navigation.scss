@@ -44,4 +44,12 @@ nav{
         transform: translateY(-6px) rotate(45deg);
         width: 35%;
     }
+
+    .nav_menu{
+        display: none;
+        cursor: pointer;
+    }
+    .nav_menu.active{
+        display: flex;
+    }
 }
