@@ -1,0 +1,20 @@
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+    .category__container{
+        width: 580px;
+        height: 580px;
+        transform: rotate(90deg);
+        flex-shrink: 0;
+        border-radius: 580px;
+        background: conic-gradient(from 90deg at 50% 50%, #ADF0FF 180deg, #FFC7E2 360deg);
+        mix-blend-mode: multiply;
+        filter: blur(50px);
+        #designer, #directer, #engineer, #producer {
+            transform: rotate(-90deg);
+        }
+    }
+}
