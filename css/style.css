@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  background-color: fff;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
 }
 
 nav {
@@ -46,33 +46,20 @@ nav .nav_menu {
   display: none;
   cursor: pointer;
 }
+nav .nav_menu .user_reserach {
+  background-color: rgba(37, 37, 37, 0.3);
+}
 nav .nav_menu.active {
   display: flex;
 }
 
-main {
-  position: relative;
-}
 main .category__container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  width: 580px;
-  height: 580px;
-  transform: rotate(90deg);
-  flex-shrink: 0;
-  border-radius: 580px;
-  background: conic-gradient(from 90deg at 50% 50%, #ADF0FF 180deg, #FFC7E2 360deg);
-  mix-blend-mode: multiply;
-  filter: blur(50px);
 }
-main .job_box #designer, main .job_box #directer, main .job_box #engineer, main .job_box #producer {
-  width: 100px;
-  height: 100px;
-  background-color: #FBFBFB;
+main .job_box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -80,6 +67,34 @@ main .job_box #designer, main .job_box #directer, main .job_box #engineer, main 
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   z-index: 1;
+}
+main .job_box .job {
+  background-color: #007bff; /* 丸の背景色 */
+  border-radius: 50%; /* 丸にするための円形の半径 */
+  position: absolute;
+}
+main .job_box .job:nth-child(1) {
+  top: 10%;
+  left: 10%;
+}
+main .job_box .job:nth-child(2) {
+  top: 10%;
+  right: 10%;
+}
+main .job_box .job:nth-child(3) {
+  bottom: 10%;
+  left: 10%;
+}
+main .job_box .job:nth-child(4) {
+  bottom: 10%;
+  right: 10%;
+}
+main .job_box #designer, main .job_box #directer, main .job_box #engineer, main .job_box #producer {
+  width: 234px;
+  height: 234px;
+  flex-shrink: 0;
+  fill: rgba(251, 251, 251, 0.85);
+  filter: drop-shadow(0px 0px 15px rgba(51, 51, 51, 0.15));
 }
 main .click_torigger {
   width: 474px;
@@ -114,4 +129,10 @@ main .click_torigger.active {
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+main .click_torigger_explain {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=style.css.map */

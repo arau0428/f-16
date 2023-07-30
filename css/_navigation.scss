@@ -48,6 +48,9 @@ nav{
     .nav_menu{
         display: none;
         cursor: pointer;
+        & .user_reserach{
+            background-color: rgba(37, 37, 37, 0.30);;
+        }
     }
     .nav_menu.active{
         display: flex;
