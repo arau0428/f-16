@@ -1,9 +1,18 @@
 nav{
+    h1{
+        margin-left:20px;
+    }
     display: flex;
     width:100%;
     height:80px;
     justify-content: space-between;
-    .nav_bottom{
-        width:50px;
+    .openbtn2{
+        margin-right:20px;
+        .nav_bottom{
+            width:50px;
+        }
     }
 }
+
+/*ここからCSSアニメーション用*/
+

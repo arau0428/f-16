@@ -1,3 +1,3 @@
-$(".click_torigger").click(function () {
+$(".click_circle").click(function () {
     $(this).toggleClass('active');
 });

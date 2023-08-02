@@ -12,12 +12,14 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
         .job_box{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             width: 350x;
             height: 350px;
+            position: relative;
             .job{
                 width:50%;
                 height:50%;
@@ -32,11 +34,30 @@ main{
             }
         }
     }
-    .click_torigger{
+    .click_circle{
         text-align: center;
+        width: 430px;
+        height:430px;
+        border-radius: 50%;
+        background-color: #FBFBFB;
+        opacity: 0.85;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        box-sizing: border-box;
     }
     .click_nav{
         text-align: center;
         margin-top: -50px;
+        font-size: 20px;
     }
+}
+
+.click_circle:active{
+    
 }
