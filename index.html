@@ -5,32 +5,31 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+        <script src="js/hamburger.js"></script>
+        <script src="js/content_click.js"></script>
         <title>nippou!</title>
     </head>
     <body>
         <nav>
+            <a href="#">
+                <h1>f-16</h1>
+            </a>
             <div class="openbtn2">
-                <span></span>
-                <span></span>
+                <img src="/img/鉛筆.png" alt="" class="nav_bottom">
             </div>
-            <div class="nav_menu">
-                <div class="user_login">ここでログイン</div>
-                <div class="user_reserach">ここで日報検索</div>
             </div>
         </nav>
         <main>
-            <img src="img/Ellipse 6.png" alt="" class="category__container">
-            <div class="job_box">
-                <div id="designer job">デザイナー</div>
-                <div id="directer job">ディレクター</div>
-                <div id="engineer job">エンジニア</div>
-                <div id="producer job">プロデューサー</div>
-            </div> 
-            <p class="click_torigger">nippou</p>
-            <p class="click_torigger_explain">touch here</p>
+            <div class="job_container">
+                <div class="job_box">
+                    <div class="job">デザイナー</div>
+                    <div class="job">ディレクター</div>
+                    <div class="job">エンジニア</div>
+                    <div class="job">プロデューサー</div>
+                </div>  
+            </div>
+            <p class="click_nav">touch here</p>
         </main>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
-        <script src="js/hamburger.js"></script>
-        <script src="js/content_click.js"></script>
     </body>
 </html>

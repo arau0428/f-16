@@ -1,17 +1,42 @@
-
 main{
-  .job_box{
-    background-image: url(/img/Ellipse\ 6.png);
-    width:580px;
-    height:580px;
-    & .job{
-      width: 234px;
-      height:234px;
-      fill: rgba(251, 251, 251, 0.85);
-      filter: drop-shadow(0px 0px 15px rgba(51, 51, 51, 0.15));
+    font-family: Avenir;
+    width:100%;
+    .job_container{
+        margin: 0 auto;
+        background-image: url(/img/グラデーション.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 600px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .job_box{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 350x;
+            height: 350px;
+            .job{
+                width:50%;
+                height:50%;
+                border-radius: 50%;
+                font-family: YuGothic;
+                font-weight:bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #FBFBFB;
+                opacity: 0.8;
+            }
+        }
     }
-  }
-  .click_torigger_explain{
-    text-align: center;
-  }
+    .click_torigger{
+        text-align: center;
+    }
+    .click_nav{
+        text-align: center;
+        margin-top: -50px;
+    }
 }

@@ -1,138 +1,57 @@
 @charset "UTF-8";
 body {
-  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+  background-image: url(/img/背景.jpg);
 }
 
 nav {
-  /*ボタン内側*/
-  /*activeクラスが付与されると線が回転して×に*/
-}
-nav .openbtn2 {
-  position: relative; /*ボタン内側の基点となるためrelativeを指定*/
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  left: calc(100% - 50px);
-}
-nav .openbtn2 span {
-  display: inline-block;
-  transition: all 0.4s; /*アニメーションの設定*/
-  position: absolute;
-  left: 13px;
-  height: 2px;
-  background-color: #666;
-}
-nav .openbtn2 span:nth-of-type(1) {
-  top: 22px;
-  width: 50%;
-}
-nav .openbtn2 span:nth-of-type(2) {
-  top: 29px;
-  width: 50%;
-}
-nav .openbtn2.active span:nth-of-type(1) {
-  top: 20px;
-  left: 16px;
-  transform: translateY(6px) rotate(-45deg);
-  width: 35%;
-}
-nav .openbtn2.active span:nth-of-type(2) {
-  top: 32px;
-  left: 16px;
-  transform: translateY(-6px) rotate(45deg);
-  width: 35%;
-}
-nav .nav_menu {
-  display: none;
-  cursor: pointer;
-}
-nav .nav_menu .user_reserach {
-  background-color: rgba(37, 37, 37, 0.3);
-}
-nav .nav_menu.active {
   display: flex;
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+}
+nav .nav_bottom {
+  width: 50px;
 }
 
-main .category__container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+main {
+  font-family: Avenir;
+  width: 100%;
 }
-main .job_box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  z-index: 1;
+main .job_container {
+  margin: 0 auto;
+  background-image: url(/img/グラデーション.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-main .job_box .job {
-  background-color: #007bff; /* 丸の背景色 */
-  border-radius: 50%; /* 丸にするための円形の半径 */
-  position: absolute;
+main .job_container .job_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 350x;
+  height: 350px;
 }
-main .job_box .job:nth-child(1) {
-  top: 10%;
-  left: 10%;
-}
-main .job_box .job:nth-child(2) {
-  top: 10%;
-  right: 10%;
-}
-main .job_box .job:nth-child(3) {
-  bottom: 10%;
-  left: 10%;
-}
-main .job_box .job:nth-child(4) {
-  bottom: 10%;
-  right: 10%;
-}
-main .job_box #designer, main .job_box #directer, main .job_box #engineer, main .job_box #producer {
-  width: 234px;
-  height: 234px;
-  flex-shrink: 0;
-  fill: rgba(251, 251, 251, 0.85);
-  filter: drop-shadow(0px 0px 15px rgba(51, 51, 51, 0.15));
+main .job_container .job_box .job {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  font-family: YuGothic;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FBFBFB;
+  opacity: 0.8;
 }
 main .click_torigger {
-  width: 474px;
-  height: 474px;
-  flex-shrink: 0;
-  border-radius: 474px;
-  background: rgba(251, 251, 251, 0.85);
-  box-shadow: 0px 0px 20px 3px rgba(51, 51, 51, 0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #333;
-  font-family: Avenir;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 4px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  z-index: 2;
+  text-align: center;
 }
-main .click_torigger.active {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-main .click_torigger_explain {
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+main .click_nav {
+  text-align: center;
+  margin-top: -50px;
 }/*# sourceMappingURL=style.css.map */
