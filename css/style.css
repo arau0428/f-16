@@ -73,6 +73,7 @@ main .job_container .job_box {
   width: 350px;
   height: 350px;
   position: relative;
+  transform: scale(0);
 }
 main .job_container .job_box .job {
   width: 50%;
@@ -85,7 +86,6 @@ main .job_container .job_box .job {
   align-items: center;
   background-color: #FBFBFB;
   opacity: 0.8;
-  transition: transform 0.5s ease-in-out; /* 拡大アニメーションのトランジション */
   cursor: pointer;
 }
 main .click_circle {
@@ -113,7 +113,7 @@ main .click_nav {
 }
 
 .click_circle.active {
-  animation: shrinkAndHide 0.2s forwards;
+  animation: shrinkAndHide 0.1s forwards;
 }
 
 @keyframes shrinkAndHide {
@@ -127,5 +127,16 @@ main .click_nav {
   }
 }
 .job_box.active {
-  transform: scale(1);
+  animation: HideAndshrink 0.15s forwards;
+}
+
+@keyframes HideAndshrink {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.85;
+  }
 }/*# sourceMappingURL=style.css.map */
