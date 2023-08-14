@@ -6,13 +6,43 @@ nav{
     width:100%;
     height:80px;
     justify-content: space-between;
-    .openbtn2{
+    .openbtn{
         margin-right:20px;
         .nav_bottom{
             width:50px;
         }
     }
+    
 }
 
+/* モーダルを隠す */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #252525;
+    opacity: 0.3;
+    z-index: 1000; /* 背景よりも手前に表示 */
+  }
+  
+  /* モーダルボックスのスタイル */
+  .modal-box {
+    width: 477px;
+    height: 477px;
+    background-color: #fbfbfb;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001; /* モーダルよりも手前に表示 */
+    display: none;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
 /*ここからCSSアニメーション用*/
 
