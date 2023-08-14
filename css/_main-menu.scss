@@ -21,16 +21,18 @@ main{
             height: 350px;
             position: relative;
             .job{
-                width:50%;
-                height:50%;
+                width: 50%;
+                height: 50%;
                 border-radius: 50%;
                 font-family: YuGothic;
-                font-weight:bold;
-                display:flex;
+                font-weight: bold;
+                display: flex;
                 justify-content: center;
                 align-items: center;
                 background-color: #FBFBFB;
-                opacity:0.8;
+                opacity: 0.8;
+                transition: transform 0.5s ease-in-out; /* 拡大アニメーションのトランジション */
+                cursor: pointer;
             }
         }
     }
@@ -74,6 +76,6 @@ main{
     }
 }
 
-.job.active{
+.job_box.active{
     transform: scale(1);
 }

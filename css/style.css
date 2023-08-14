@@ -85,6 +85,8 @@ main .job_container .job_box .job {
   align-items: center;
   background-color: #FBFBFB;
   opacity: 0.8;
+  transition: transform 0.5s ease-in-out; /* 拡大アニメーションのトランジション */
+  cursor: pointer;
 }
 main .click_circle {
   text-align: center;
@@ -124,6 +126,6 @@ main .click_nav {
     opacity: 0;
   }
 }
-.job.active {
+.job_box.active {
   transform: scale(1);
 }/*# sourceMappingURL=style.css.map */
