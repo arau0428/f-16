@@ -14,10 +14,10 @@ main{
         align-items: center;
         position: relative;
         .job_box{
-            display: flex;
+            display:flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            width: 350x;
+            width: 350px;
             height: 350px;
             position: relative;
             .job{
@@ -26,11 +26,11 @@ main{
                 border-radius: 50%;
                 font-family: YuGothic;
                 font-weight:bold;
-                display: flex;
+                display:flex;
                 justify-content: center;
                 align-items: center;
                 background-color: #FBFBFB;
-                opacity: 0.8;
+                opacity:0.8;
             }
         }
     }
@@ -40,7 +40,7 @@ main{
         height:430px;
         border-radius: 50%;
         background-color: #FBFBFB;
-        opacity: 0.85;
+        opacity:0.85;
         position: absolute;
         top:50%;
         left: 50%;
@@ -50,6 +50,7 @@ main{
         align-items: center;
         font-size: 40px;
         box-sizing: border-box;
+        
     }
     .click_nav{
         text-align: center;
@@ -58,6 +59,21 @@ main{
     }
 }
 
-.click_circle:active{
-    
+.click_circle.active{
+    animation: shrinkAndHide 0.2s forwards;
+}
+
+@keyframes shrinkAndHide {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.85;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 0;
+    }
+}
+
+.job.active{
+    transform: scale(1);
 }

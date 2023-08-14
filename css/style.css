@@ -41,7 +41,7 @@ main .job_container .job_box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 350x;
+  width: 350px;
   height: 350px;
   position: relative;
 }
@@ -78,4 +78,22 @@ main .click_nav {
   text-align: center;
   margin-top: -50px;
   font-size: 20px;
+}
+
+.click_circle.active {
+  animation: shrinkAndHide 0.2s forwards;
+}
+
+@keyframes shrinkAndHide {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.85;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+}
+.job.active {
+  transform: scale(1);
 }/*# sourceMappingURL=style.css.map */
